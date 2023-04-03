@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">DeliveryCartUsingXML</string>
+    <string name="save_location">Save location for \n later use</string>
+</resources>

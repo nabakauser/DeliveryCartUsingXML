@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/uiGetImageTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose an option"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <View
+        android:id="@+id/uiView"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/grey"
+        app:layout_constraintTop_toBottomOf="@id/uiGetImageTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/uiTvGetImageFromGallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gallery"
+        android:textColor="@color/black"
+        android:paddingStart="40dp"
+        android:paddingEnd="5dp"
+        android:textSize="15sp"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@id/uiView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/uiIvGalleryLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_payment"
+        android:padding="10dp"
+        app:layout_constraintTop_toTopOf="@id/uiTvGetImageFromGallery"
+        app:layout_constraintBottom_toBottomOf="@id/uiTvGetImageFromGallery"
+        app:layout_constraintStart_toStartOf="@id/uiTvGetImageFromGallery"/>
+
+    <TextView
+        android:id="@+id/uiTvGetImageFromCamera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Camera"
+        android:textColor="@color/black"
+        android:paddingStart="40dp"
+        android:paddingEnd="5dp"
+        android:padding="10dp"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@id/uiTvGetImageFromGallery"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/uiIvCameraLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_camera"
+        android:padding="10dp"
+        app:layout_constraintTop_toTopOf="@id/uiTvGetImageFromCamera"
+        app:layout_constraintBottom_toBottomOf="@id/uiTvGetImageFromCamera"
+        app:layout_constraintStart_toStartOf="@id/uiTvGetImageFromCamera"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

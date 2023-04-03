@@ -1,0 +1,18 @@
+<?xml version ="1.0" encoding ="utf-8"?><!--  Learn More about how to use App Actions: https://developer.android.com/guide/actions/index.html -->
+<paths>
+    <files-path
+        name="my_images"
+        path="/" />
+    <external-path
+        name="external"
+        path="/" />
+    <external-files-path
+        name="external_files"
+        path="/" />
+    <cache-path
+        name="cache"
+        path="/" />
+    <external-cache-path
+        name="external_cache"
+        path="/" />
+</paths>
